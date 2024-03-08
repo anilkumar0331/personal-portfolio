@@ -1,1 +1,50 @@
-<p>projects works!</p>
+<div class="section" id="projects">
+    <div class="container">
+        <div class="h4 text-center mb-4 title">PROJECTS</div>
+        <div class="cards d-flex" data-aos="fade-up" data-aos-offset="10">
+            <ng-container *ngFor="let project of projects">
+                <div class="wrapper">
+                    <div class="card card--rounded wrapper__front">
+                        <div class="card__header">
+                            <img class="card__image" [src]="project.img" [alt]="project.title" />
+                        </div>
+                    </div>
+                    <div class="card card--rounded wrapper__back">
+                        <div class="card__header">
+                            <img class="card__image" [src]="project.img" [alt]="project.title" />
+                        </div>
+                        <div class="py-2">
+                            <div class="">
+                                <div>
+                                    <p class="text text-center">
+                                        <span class=""><b>{{project.title}}</b></span>
+                                    </p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="{{project.demoUrl}}" target="_blank">
+                                            <button class="btn btn--transparent btn--circle">
+                                                <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" fill="none" viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M21.44 10.72L5.96 2.98A1.38 1.38 0 004 4.213v15.474a1.373 1.373 0 002 1.233l15.44-7.74a1.38 1.38 0 000-2.467v.007z" />
+                                                </svg>
+                                            </button>
+                                        </a>
+                                        <a href="{{project.codeUrl}}" target="_blank">
+                                            <button class="btn btn--transparent btn--circle">
+                                                <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" fill="none" viewBox="0 0 24 24">
+                                                    <path d="M7 8L3 11.6923L7 16M17 8L21 11.6923L17 16M14 4L10 20"
+                                                        stroke="white" stroke-width="3" />
+                                                </svg>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>
