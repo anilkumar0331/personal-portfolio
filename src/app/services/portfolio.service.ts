@@ -51,7 +51,7 @@ export class PortfolioService {
     },
   ]
 
-  profileImage = 'assets/images/portfolio-profile-photo.png'
+  profileImage = 'assets/images/portfolio-profile-photo.jpg'
 
   projectDetails: any = [
     {
