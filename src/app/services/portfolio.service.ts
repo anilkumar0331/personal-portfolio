@@ -78,6 +78,14 @@ export class PortfolioService {
       demoUrl: 'https://anilkumar0331.github.io/Bus-Booking-App/',
       codeUrl: 'https://github.com/anilkumar0331/Bus-Booking-App'
     },
+    {
+      id: 4,
+      title: 'Personal Portfolio',
+      description: '',
+      img: 'assets/images/cover-image.jpg',
+      demoUrl: 'https://anilkumar0331.github.io/Personal-Portfolio/',
+      codeUrl: 'https://github.com/anilkumar0331/Personal-Portfolio'
+    }
   ];
 
   constructor() { }
