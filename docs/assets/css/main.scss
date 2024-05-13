@@ -46,7 +46,6 @@ body {
 .navbar .navbar-nav > a.btn.dropdown-toggle:focus,
 .show >
 .navbar .navbar-nav > a.btn.dropdown-toggle:hover {
-  background-color: rgba(109, 109, 110, 0.7);
   color: #FFFFFF;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1378,8 +1377,6 @@ a:hover, a:focus {
 
 h1, .h1 {
   font-size: 3.5em;
-  line-height: 1.15;
-  margin-bottom: 30px;
 }
 
 h1 small, .h1 small {
@@ -1390,20 +1387,14 @@ h1 small, .h1 small {
 
 h2, .h2 {
   font-size: 2.5em;
-  margin-bottom: 30px;
 }
 
 h3, .h3 {
   font-size: 2em;
-  margin-bottom: 30px;
-  line-height: 1.4em;
 }
 
 h4, .h4 {
   font-size: 1.714em;
-  line-height: 1.45em;
-  margin-top: 30px;
-  margin-bottom: 15px;
 }
 
 h4 + .category,
@@ -1414,8 +1405,6 @@ h4.title + .category, .h4 + .category,
 
 h5, .h5 {
   font-size: 1.57em;
-  line-height: 1.4em;
-  margin-bottom: 15px;
 }
 
 h6, .h6 {
@@ -3099,7 +3088,7 @@ img {
   overflow: hidden;
   width: 100%;
   margin-bottom: 20px;
-  background-color: rgba(109, 109, 110, 0.7);
+  background-color: #212121;
   color: #FFFFFF;
   -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
@@ -3221,7 +3210,7 @@ img {
 
 .page-header .page-header-image {
   position: absolute;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/images/cover-image.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/images/personal-portfolio-app-cover.jpg');
   background-size: cover;
   background-position: center center;
   width: 100%;
@@ -3337,7 +3326,7 @@ img {
     right: 0;
     z-index: 1032;
     visibility: visible;
-    background-color: #999;
+    background-color: #141414;
     overflow-y: visible;
     border-top: none;
     text-align: left;
@@ -3348,13 +3337,13 @@ img {
     transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   }
   .sidebar-collapse .navbar-collapse:before {
-    background: #378C3F;
+    background: #141414;
     /* For browsers that do not support gradients */
     /* For Safari 5.1 to 6.0 */
     /* For Opera 11.1 to 12.0 */
     /* For Firefox 3.6 to 15 */
-    background: -webkit-gradient(linear, left top, left bottom, from(#378C3F), color-stop(80%, #000));
-    background: linear-gradient(#378C3F 0%, #000 80%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#212121), color-stop(80%, #141414));
+    background: linear-gradient(#212121 0%, #141414 80%);
     /* Standard syntax (must be last) */
     opacity: 0.76;
     filter: alpha(opacity=76);
