@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { About } from 'src/app/constants';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
@@ -8,15 +9,12 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
 })
 export class AboutComponent implements OnInit{
 
-  about = '';
-  about2 = '';
+  about = About;
   profileImage = '';
 
   constructor(private portfolioService: PortfolioService) { }
 
   ngOnInit() {
-    this.about = this.portfolioService.about;
-    this.about2 = this.portfolioService.about2;
     this.profileImage = this.portfolioService.profileImage;
   }
 

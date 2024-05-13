@@ -1,0 +1,31 @@
+<div class="row row-cols-1 row-cols-md-2 g-4">
+<div class="col" *ngFor = "let project of projects">
+    <div class="card h-100 project-card">
+      <img [src]="project.img" class="card-img-top card__image" [alt]="project.title">
+      <div class="card-body text-center pt-4 pb-0">
+        <h5 class="card-title">{{project.title}}</h5>
+        <p class="card-text">{{project.description}}</p>
+        <div class="d-flex justify-content-center">
+            <a href="{{project.demoUrl}}" target="_blank">
+                <button class="btn btn--transparent btn--circle">
+                    <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" fill="white" viewBox="0 0 24 24">
+                        <path
+                            d="M21.44 10.72L5.96 2.98A1.38 1.38 0 004 4.213v15.474a1.373 1.373 0 002 1.233l15.44-7.74a1.38 1.38 0 000-2.467v.007z" />
+                    </svg>
+                </button>
+            </a>
+            <a href="{{project.codeUrl}}" target="_blank">
+                <button class="btn btn--transparent btn--circle">
+                    <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" fill="white" viewBox="0 0 24 24">
+                        <path d="M7 8L3 11.6923L7 16M17 8L21 11.6923L17 16M14 4L10 20"
+                            stroke="white" stroke-width="3" />
+                    </svg>
+                </button>
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

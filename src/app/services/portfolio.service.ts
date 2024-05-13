@@ -6,9 +6,6 @@ import { Observable } from 'rxjs';
 })
 export class PortfolioService {
 
-  about = "Hi there! I'm a Full Stack Web Developer with a passion for crafting engaging digital experiences. My expertise spans a variety of programming languages, including Java, Python, R, and PHP, allowing me to tackle a wide range of projects with ease. I excel at creating dynamic and responsive web applications, thanks to my in-depth knowledge of HTML, CSS3, Bootstrap, JavaScript, and TypeScript. Leveraging powerful frameworks like Angular, Spring Boot, and Express.js, alongside essential tools such as Visual Studio Code, Eclipse, and Postman, I streamline development processes to deliver high-quality solutions efficiently. My experience with databases like MySQL and MongoDB ensures robust backend support for complex applications, while my proficiency in Git facilitates smooth collaboration within team environments."
-  about2 = "Driven by a commitment to excellence and a relentless pursuit of innovation, I approach each project with a unique blend of technical skill and creative vision. My ability to manage projects effectively is enhanced by my familiarity with platforms like Rally and Jira, ensuring timely completion and success. Whether you're looking to bring a new idea to life or seeking to elevate your existing digital presence, I'm here to help you achieve your goals. Let's connect and explore how we can work together to create something exceptional."
-
   skillsData: any = [
     { 'id': '1', 'skill': 'HTML', 'progress': '100%' },
     { 'id': '2', 'skill': 'CSS', 'progress': '90%' },
@@ -28,74 +25,83 @@ export class PortfolioService {
     { 'id': '16', 'skill': 'JIRA/RALLY', 'progress': '80%' }
   ];
 
-  exprienceData: any = [
-    {
-      id: 3,
-      company: 'Cognizant',
-      location: 'Hyderabad, India',
-      timeline: 'December 2020 - July 2022',
-      role: 'Programmer Analyst',
-      work: `
-      Led UI development from analysis to testing within the SDLC framework, including creating specifications, design documents, test cases, and technical documentation, for 2 major projects and 1 mini project .
-
-      Designed responsive web interfaces utilizing HTML, CSS, JavaScript, and Angular, resulting in a 40% increase in user engagement and a 30% improvement in page load times for a website with over 100,000 monthly visitors .
-      
-      Created unit test cases with Jasmine and Karma, coupled with extensive knowledge of the DOM, to optimize application performance, achieving a 25% reduction in load times for complex applications .
-      
-      Established backend services utilizing Java and Spring Boot to create RESTful APIs, and deployed them using Swagger for 10+ services, enhancing system integration and efficiency .
-      
-      Managed code collaboration using GitHub and streamlined project workflows with Rally and Jira for effective team coordination, reducing project delivery times by 20% .
-      
-      Collaborated on deploying applications to AWS and Azure, ensuring scalability and high availability with a focus on cloud-based solution resilience, leading to a 99.9% uptime for critical applications.
-      `
-    },
-  ]
-
   profileImage = 'assets/images/portfolio-profile-photo.jpg'
 
-  projectDetails: any = [
-    {
-      id: 1,
-      title: 'Food Delivery Application',
-      description: '',
-      img: 'assets/images/food-delivery-app-cover.jpg',
-      demoUrl: 'https://anilkumar0331.github.io/Omnifood-delivery/',
-      codeUrl: 'https://github.com/anilkumar0331/Omnifood-delivery'
-    },
-    {
-      id: 2,
-      title: 'Online Shopping Application',
-      description: '',
-      img: 'assets/images/online-shopping-app-cover.webp',
-      demoUrl: 'https://anilkumar0331.github.io/estore-online-shopping/',
-      codeUrl: 'https://github.com/anilkumar0331/estore-online-shopping'
-    },
-    {
-      id: 3,
-      title: 'Bus Ticket Booking Application',
-      description: '',
-      img: 'assets/images/bus-booking-app-cover.png',
-      demoUrl: 'https://anilkumar0331.github.io/Bus-Booking-App/',
-      codeUrl: 'https://github.com/anilkumar0331/Bus-Booking-App'
-    },
-    {
-      id: 4,
-      title: 'Personal Portfolio',
-      description: '',
-      img: 'assets/images/cover-image.jpg',
-      demoUrl: 'https://anilkumar0331.github.io/Personal-Portfolio/',
-      codeUrl: 'https://github.com/anilkumar0331/Personal-Portfolio'
-    }
-  ];
+  projectDetails: any = {
+    webAppProjects: [
+      {
+        id: 1,
+        title: 'Personal Portfolio Application',
+        description: 'Showcasing skills, work experience, projects, and more. Developed with Angular for a dynamic user experience.',
+        img: 'assets/images/personal-portfolio-app-cover.jpg',
+        demoUrl: 'https://anilkumar0331.github.io/Personal-Portfolio/',
+        codeUrl: 'https://github.com/anilkumar0331/Personal-Portfolio'
+      },
+      {
+        id: 2,
+        title: 'Omnifood Delivery Application',
+        description: 'A responsive single-page web application for seamless food delivery. Developed with HTML, CSS, and JavaScript.',
+        img: 'assets/images/food-delivery-app-cover.jpg',
+        demoUrl: 'https://anilkumar0331.github.io/Omnifood-delivery/',
+        codeUrl: 'https://github.com/anilkumar0331/Omnifood-delivery'
+      },
+      {
+        id: 3,
+        title: 'Online Shopping Application',
+        description: 'A single-page web application for easy browsing and purchasing. Developed with HTML and CSS.',
+        img: 'assets/images/online-shopping-app-cover.webp',
+        demoUrl: 'https://anilkumar0331.github.io/estore-online-shopping/',
+        codeUrl: 'https://github.com/anilkumar0331/estore-online-shopping'
+      },
+      {
+        id: 4,
+        title: 'Bus Ticket Booking Application',
+        description: 'A responsive web application for Swift, hassle-free reservations. Developed with Express.js, Angular, and MongoDB.',
+        img: 'assets/images/bus-booking-app-cover.png',
+        demoUrl: 'https://anilkumar0331.github.io/Bus-Booking-App/',
+        codeUrl: 'https://github.com/anilkumar0331/Bus-Booking-App'
+      }
+    ],
+    mlProjects: [
+      {
+        id: 1,
+        title: 'Large Language Model Behaviour Pattern',
+        description: 'Examined Large Language Models to understand hallucinations and inconsistencies in their responses.',
+        img: 'assets/images/llm-behaviour-pattern-cover.jpg',
+        demoUrl: 'https://github.com/anilkumar0331/LLM-Behaviour-Pattern',
+        codeUrl: 'https://github.com/anilkumar0331/LLM-Behaviour-Pattern'
+      },
+      {
+        id: 2,
+        title: 'Bank Customer Churn Prediction',
+        description: 'Regression analysis on BankChurner data to help banks reduce customer churn and foster lasting relationships.',
+        img: 'assets/images/churn-prediction-cover.png',
+        demoUrl: 'https://github.com/anilkumar0331/churn-prediction-in-banking',
+        codeUrl: 'https://github.com/anilkumar0331/churn-prediction-in-banking'
+      },
+      {
+        id: 3,
+        title: 'Bad Graph vs Good Graph',
+        description: 'Addresses data misrepresentation by correcting misleading visualizations using R and its libraries.',
+        img: 'assets/images/graph-redesign-cover.webp',
+        demoUrl: 'https://github.com/anilkumar0331/bad-graph-redesign',
+        codeUrl: 'https://github.com/anilkumar0331/bad-graph-redesign'
+      },
+      {
+        id: 4,
+        title: 'Exploration Of Udemy Courses Growth',
+        description: "Analyzed Udemy's data to aid students in selecting courses based on interests, cost, duration, popularity, and ratings.",
+        img: 'assets/images/udemy-growth-cover.jpg',
+        demoUrl: 'https://github.com/anilkumar0331/udemy-growth-of-courses',
+        codeUrl: 'https://github.com/anilkumar0331/udemy-growth-of-courses'
+      }
+    ]
+  };
 
   constructor() { }
 
   skills(): Observable<any> {
     return this.skillsData;
-  }
-
-  exprience(): Observable<any> {
-    return this.exprienceData;
   }
 
   getProjectDetails(): Observable<any> {

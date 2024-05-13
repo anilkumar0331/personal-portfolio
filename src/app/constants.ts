@@ -1,0 +1,7 @@
+export enum About {
+    para_01 = `Hi there! I'm a passionate Data Engineer and experienced Full Stack Web Developer currently pursuing a Master's degree in Data Analytics Engineering at George Mason University - College of Engineering and Computing.`,
+    para_02 = `With a solid foundation in Python, R, MySQL, MongoDB, and Tableau, I specialize in handling, analyzing, and visualizing large and diverse datasets. My expertise extends to creating and optimizing predictive models, empowering businesses to make data-driven decisions.`,
+    para_03 = `Prior to my journey in data analytics, I spent two years as a Full Stack Web Developer, proficient in Spring Boot, Angular, and an array of web technologies including HTML, CSS3, Bootstrap, JavaScript, and TypeScript. From developing dynamic and responsive web applications to ensuring seamless data management with MySQL and MongoDB, I thrive on solving complex problems and embracing new technologies.`,
+    para_04 = `Proficient in multiple programming languages, including Java, Python, and R, I am committed to continuous learning and growth. My experience with Git for version control and project management platforms like Rally and Jira reflects my dedication to collaborative development and efficient project execution.`,
+    para_05 = `I'm always eager to connect with fellow professionals, share insights, and explore opportunities for collaboration.`,
+  }

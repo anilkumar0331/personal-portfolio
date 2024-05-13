@@ -8,12 +8,8 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
 })
 export class ExperienceComponent implements OnInit{
 
-  workexp: any;
-
-  constructor(private portfolioService: PortfolioService){}
+  constructor(){}
   
-  ngOnInit(): void {
-    this.workexp =  this.portfolioService.exprience();
-  }
+  ngOnInit() {}
 
 }

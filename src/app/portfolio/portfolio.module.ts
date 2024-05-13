@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ProjectCardsComponent } from './project-cards/project-cards.component';
 
 
 
@@ -24,7 +25,8 @@ import { SkillsComponent } from './skills/skills.component';
     HeaderComponent,
     IntroductionComponent,
     ProjectsComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProjectCardsComponent
   ],
   imports: [
     CommonModule
