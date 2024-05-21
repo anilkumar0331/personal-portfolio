@@ -1,36 +1,19 @@
 <div class="section" id="experience">
     <div class="container cc-education">
         <div class="h4 text-center mb-4 title">WORK EXPERIENCE</div>
-        <div class="card" data-aos="fade-up" data-aos-offset="10">
+        <div class="card" data-aos="fade-up" data-aos-offset="10" *ngFor="let exp of experienceDetails">
             <div class="row">
                 <div class="col-md-3 badge" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                     <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                        <div class="h5">Feb 2021 - Jul 2022</div>
-                        <div class="h5">Full Stack Web Developer</div>
+                        <div class="h5">{{exp.sDate}} &#45; {{exp.eDate}}</div>
+                        <div class="h5">{{exp.role}}</div>
                     </div>
                 </div>
                 <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                     <div class="card-body">
-                        <div class="h5">Programmer Analyst, Full-Time</div>
-                        <h5 class="category my-0">Cognizant</h5>
-                        <i>Hyderabad, Telangana, India</i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-offset="10">
-            <div class="row">
-                <div class="col-md-3 badge" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                        <div class="h5">Aug 2020 - Jan 2021</div>
-                        <div class="h5">Full Stack Web Developer</div>
-                    </div>
-                </div>
-                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body">
-                        <div class="h5">Programmer Analyst Trainee, Internship</div>
-                        <h5 class="category my-0">Cognizant</h5>
-                        <i>Hyderabad, Telangana, India</i>
+                        <div class="h5">{{exp.designation}}&#44; {{exp.empType}}</div>
+                        <h5 class="category my-0">{{exp.company}}</h5>
+                        <i>{{exp.address}}</i>
                     </div>
                 </div>
             </div>

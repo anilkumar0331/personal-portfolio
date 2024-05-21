@@ -1,36 +1,19 @@
 <div class="section" id="education">
     <div class="container cc-education">
         <div class="h4 text-center mb-4 title">EDUCATION</div>
-        <div class="card">
+        <div class="card" *ngFor = "let ed of educationDetails">
             <div class="row">
                 <div class="col-md-3 badge" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                     <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                        <div class="h5">Aug 2022 - May 2024</div>
-                        <div class="h5">Master of Science</div>
+                        <div class="h5">{{ed.sDate}} &#45; {{ed.eDate}}</div>
+                        <div class="h5">{{ed.degree}}</div>
                     </div>
                 </div>
                 <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                     <div class="card-body">
-                        <div class="h5">Master of Science, Data Analytics Engineering</div>
-                        <h5 class="category my-0">George Mason University</h5>
-                        <i>Fairfax, Virginia, United States</i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="row">
-                <div class="col-md-3 badge" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                        <div class="h5">Aug 2016 - Sep 2020</div>
-                        <div class="h5">Bachelor of Technology</div>
-                    </div>
-                </div>
-                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body">
-                        <div class="h5">Bachelor of Technology, Electronics and Communication Engineering</div>
-                        <h5 class="category my-0">Jawaharlal Nehru Technological University</h5>
-                        <i>Hyderabad, Telangana, India</i>
+                        <div class="h5">{{ed.degree}}&#44; {{ed.specialization}}</div>
+                        <h5 class="category my-0">{{ed.university}}</h5>
+                        <i>{{ed.address}}</i>
                     </div>
                 </div>
             </div>

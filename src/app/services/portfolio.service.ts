@@ -98,6 +98,60 @@ export class PortfolioService {
     ]
   };
 
+  experienceDetails: any = [
+    {
+      id: 1,
+      role: 'Data Analyst',
+      designation: 'Scrum Master & Developer',
+      sDate: 'Jan 2024',
+      eDate: 'May 2024',
+      empType: 'Apprenticeship',
+      company: 'HUMAN-CYBER PERFORMANCE TECH, LLC',
+      address: 'Fairfax, Virginia, United States'
+    },
+    {
+      id: 2,
+      role: 'Full Stack Web Developer',
+      designation: 'Programmer Analyst',
+      sDate: 'Feb 2021',
+      eDate: 'July 2022',
+      empType: 'Full-Time',
+      company: 'Cognizant',
+      address: 'Hyderabad, Telangana, India'
+    },
+    {
+      id: 3,
+      role: 'Full Stack Web Developer',
+      designation: 'Programmer Analyst Trainee',
+      sDate: 'Aug 2020',
+      eDate: 'Jan 2021',
+      empType: 'Internship',
+      company: 'Cognizant',
+      address: 'Hyderabad, Telangana, India'
+    },
+  ];
+
+  educationDetails: any = [
+    {
+      id: 1,
+      degree: 'Master of Science',
+      specialization: 'Data Analytics Engineering',
+      sDate: 'Aug 2022',
+      eDate: 'May 2024',
+      university: 'GEORGE MASON UNIVERSITY',
+      address: 'Fairfax, Virginia, United States'
+    },
+    {
+      id: 2,
+      degree: 'Bachelor of Technology',
+      specialization: 'Electronics and Communication Engineering',
+      sDate: 'Aug 2016',
+      eDate: 'Sep 2020',
+      university: 'JAWAHARLAL NEHRU TECHNOLOGICAL UNIVERSITY',
+      address: 'Hyderabad, Telangana, India'
+    },
+  ];
+
   constructor() { }
 
   skills(): Observable<any> {
@@ -107,5 +161,14 @@ export class PortfolioService {
   getProjectDetails(): Observable<any> {
     return this.projectDetails;
   }
+
+  getExpereinceDetails(): Observable<any> {
+    return this.experienceDetails;
+  }
+
+  getEducationDetails(): Observable<any> {
+    return this.educationDetails;
+  }
+
 }
 
