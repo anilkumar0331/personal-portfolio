@@ -13,7 +13,7 @@ export class SkillsComponent implements OnInit{
   constructor(private portfolioService: PortfolioService){}
   
   ngOnInit(): void {
-    this.skills =  this.portfolioService.skills();
+    this.skills =  this.portfolioService.getSkills();
   }
 
 }

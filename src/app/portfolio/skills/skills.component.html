@@ -1,19 +1,58 @@
 <div class="section" id="skills">
     <div class="container">
         <div class="h4 text-center mb-4 title">SKILLS</div>
-        <div class="card" data-aos="fade-up" data-aos-offset="10">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-6" *ngFor="let skill of skills">
-                        <div class="progress-container progress-neutral">
-                            <span class="progress-badge">{{skill.skill}}</span>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" data-aos="progress-full"
-                                    data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60"
-                                    aria-valuemin="0" aria-valuemax="100" style="width: {{skill.progress}}"></div>
-                                <span class="progress-value">{{skill.progress}}</span>
-                            </div>
-                        </div>
+        <div class="card">
+            <div class="row">
+                <div class="col-md-3 badge" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body d-flex flex-column justify-content-center">
+                        <div class="h5">Programming Languages</div>
+                    </div>
+                </div>
+                <div class="col-md-9 px-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body px-0 d-flex flex-column justify-content-center">
+                        <app-skills-slider [skills]="skills.programmingLangs"></app-skills-slider>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="row">
+                <div class="col-md-3 badge" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body d-flex flex-column justify-content-center">
+                        <div class="h5">Web Technologies</div>
+                    </div>
+                </div>
+                <div class="col-md-9 px-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body px-0 d-flex flex-column justify-content-center">
+                        <app-skills-slider [skills]="skills.webTechnologies"></app-skills-slider>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="row">
+                <div class="col-md-3 badge" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body d-flex flex-column justify-content-center">
+                        <div class="h5">Databases</div>
+                    </div>
+                </div>
+                <div class="col-md-9 px-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body px-0 d-flex flex-column justify-content-center">
+                        <app-skills-slider [skills]="skills.databases"></app-skills-slider>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="row">
+                <div class="col-md-3 badge" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body d-flex flex-column justify-content-center">
+                        <div class="h5">Tools and Cloud Technologies</div>
+                    </div>
+                </div>
+                <div class="col-md-9 px-0" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body px-0 d-flex flex-column justify-content-center">
+                        <app-skills-slider [skills]="skills.toolsAndCloudTechnologies"></app-skills-slider>
                     </div>
                 </div>
             </div>

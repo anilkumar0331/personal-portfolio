@@ -6,25 +6,6 @@ import { Observable } from 'rxjs';
 })
 export class PortfolioService {
 
-  skillsData: any = [
-    { 'id': '1', 'skill': 'HTML', 'progress': '100%' },
-    { 'id': '2', 'skill': 'CSS', 'progress': '90%' },
-    { 'id': '3', 'skill': 'BOOTSTRAP', 'progress': '90%' },
-    { 'id': '4', 'skill': 'JAVASCRIPT', 'progress': '80%' },
-    { 'id': '5', 'skill': 'TYPESCRIPT', 'progress': '80%' },
-    { 'id': '6', 'skill': 'EXPRESSJS', 'progress': '75%' },
-    { 'id': '7', 'skill': 'ANGULAR', 'progress': '80%' },
-    { 'id': '8', 'skill': 'GIT', 'progress': '75%' },
-    { 'id': '9', 'skill': 'JAVA', 'progress': '80%' },
-    { 'id': '10', 'skill': 'SPRING BOOT', 'progress': '80%' },
-    { 'id': '11', 'skill': 'PHP', 'progress': '70%' },
-    { 'id': '12', 'skill': 'PYTHON', 'progress': '70%' },
-    { 'id': '13', 'skill': 'R', 'progress': '70%' },
-    { 'id': '14', 'skill': 'SQL/MYSQL', 'progress': '80%' },
-    { 'id': '15', 'skill': 'NOSQL/MONGODB', 'progress': '80%' },
-    { 'id': '16', 'skill': 'JIRA/RALLY', 'progress': '80%' }
-  ];
-
   profileImage = 'assets/images/portfolio-profile-photo.jpg'
 
   projectDetails: any = {
@@ -152,11 +133,179 @@ export class PortfolioService {
     },
   ];
 
-  constructor() { }
-
-  skills(): Observable<any> {
-    return this.skillsData;
+  skills: any = {
+    programmingLangs: [
+      {
+        id: 1,
+        name: 'Java',
+        logo: 'https://www.svgrepo.com/show/452234/java.svg'
+      },
+      {
+        id: 2,
+        name: 'Python',
+        logo: 'https://www.svgrepo.com/show/452091/python.svg'
+      },
+      {
+        id: 3,
+        name: 'R',
+        logo: 'https://www.r-project.org/logo/Rlogo.svg'
+      },
+      {
+        id: 4,
+        name: 'JavaScript',
+        logo: 'https://www.svgrepo.com/show/452045/js.svg'
+      },
+      {
+        id: 5,
+        name: 'TypeScript',
+        logo: 'https://www.svgrepo.com/show/374146/typescript-official.svg'
+      }
+    ],
+    webTechnologies: [
+      {
+        id: 1,
+        name: 'HTML',
+        logo: 'assets/images/html-5-svgrepo-com.svg'
+      },
+      {
+        id: 2,
+        name: 'CSS',
+        logo: 'assets/images/css-3-svgrepo-com.svg'
+      },
+      {
+        id: 3,
+        name: 'Bootstrap',
+        logo: 'https://www.svgrepo.com/show/353498/bootstrap.svg'
+      },
+      {
+        id: 4,
+        name: 'PHP',
+        logo: 'https://www.svgrepo.com/show/452088/php.svg'
+      },
+      {
+        id: 5,
+        name: 'Angular',
+        logo: 'https://www.svgrepo.com/show/452156/angular.svg'
+      },
+      {
+        id: 6,
+        name: 'React JS',
+        logo: 'https://www.svgrepo.com/show/452092/react.svg'
+      },
+      {
+        id: 7,
+        name: 'Node JS',
+        logo: 'assets/images/nodejs-svgrepo-com.svg'
+      },
+      {
+        id: 8,
+        name: 'Express JS',
+        logo: 'assets/images/express-svgrepo-com.svg'
+      },
+      {
+        id: 9,
+        name: 'Spring Boot',
+        logo: 'https://www.svgrepo.com/show/354379/spring.svg'
+      }
+    ],
+    databases: [
+      {
+        id: 1,
+        name: 'SQL Server',
+        logo: 'assets/images/microsoft-sql-server-logo-svgrepo-com.svg'
+      },
+      {
+        id: 2,
+        name: 'MySQL',
+        logo: 'https://www.svgrepo.com/show/303251/mysql-logo.svg'
+      },
+      {
+        id: 3,
+        name: 'PostgreSQL',
+        logo: 'https://www.svgrepo.com/show/354200/postgresql.svg'
+      },
+      {
+        id: 4,
+        name: 'Oracle SQL',
+        logo: 'https://www.svgrepo.com/show/354152/oracle.svg'
+      },
+      {
+        id: 5,
+        name: 'MongoDB',
+        logo: 'assets/images/mongodb-svgrepo-com.svg'
+      }
+    ],
+    toolsAndCloudTechnologies: [
+      {
+        id: 1,
+        name: 'Tableau',
+        logo: 'https://www.svgrepo.com/show/354428/tableau-icon.svg'
+      },
+      {
+        id: 2,
+        name: 'Git (command line)',
+        logo: 'https://www.svgrepo.com/show/452210/git.svg'
+      },
+      {
+        id: 3,
+        name: 'Azure',
+        logo: 'https://www.svgrepo.com/show/353464/azure.svg'
+      },
+      {
+        id: 4,
+        name: 'AWS',
+        logo: 'assets/images/aws-svgrepo-com.svg'
+      },
+      {
+        id: 5,
+        name: 'Docker',
+        logo: 'https://www.svgrepo.com/show/353661/docker.svg'
+      },
+      {
+        id: 6,
+        name: 'Jira',
+        logo: 'https://www.svgrepo.com/show/353935/jira.svg'
+      },
+      {
+        id: 7,
+        name: 'YouTrack',
+        logo: 'https://www.svgrepo.com/show/354593/youtrack.svg'
+      },
+      {
+        id: 8,
+        name: 'GitHub',
+        logo: 'assets/images/github-142-svgrepo-com.svg'
+      },
+      {
+        id: 9,
+        name: 'Visual Studio Code',
+        logo: 'https://www.svgrepo.com/show/354522/visual-studio-code.svg'
+      },
+      {
+        id: 10,
+        name: 'Eclipse',
+        logo: 'https://www.svgrepo.com/show/353685/eclipse-icon.svg'
+      },
+      {
+        id: 11,
+        name: 'Postman',
+        logo: 'https://www.svgrepo.com/show/354202/postman-icon.svg'
+      },
+      {
+        id: 12,
+        name: 'Jupyter',
+        logo: 'assets/images/jupyter-svgrepo-com.svg'
+      },
+      {
+        id: 13,
+        name: 'RStudio',
+        logo: 'assets/images/RStudio-Logo-flat.svg'
+      }
+    ],
   }
+        
+
+  constructor() { }
 
   getProjectDetails(): Observable<any> {
     return this.projectDetails;
@@ -168,6 +317,10 @@ export class PortfolioService {
 
   getEducationDetails(): Observable<any> {
     return this.educationDetails;
+  }
+
+  getSkills(): Observable<any> {
+    return this.skills;
   }
 
 }

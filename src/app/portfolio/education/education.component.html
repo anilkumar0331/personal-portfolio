@@ -4,13 +4,13 @@
         <div class="card" *ngFor = "let ed of educationDetails">
             <div class="row">
                 <div class="col-md-3 badge" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                    <div class="card-body d-flex flex-column justify-content-center">
                         <div class="h5">{{ed.sDate}} &#45; {{ed.eDate}}</div>
                         <div class="h5">{{ed.degree}}</div>
                     </div>
                 </div>
                 <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column justify-content-center">
                         <div class="h5">{{ed.degree}}&#44; {{ed.specialization}}</div>
                         <h5 class="category my-0">{{ed.university}}</h5>
                         <i>{{ed.address}}</i>

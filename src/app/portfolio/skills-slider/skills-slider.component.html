@@ -1,0 +1,11 @@
+<div class="slider">
+    <div class="slide-track" [ngStyle]="{
+        width: calculateWidth(skills.length),
+        '--transform-end': calculateTransform(skills.length),
+        animationDuration: calculateDuration(skills.length)
+      }">
+        <div class="slide" *ngFor="let skill of skills">
+            <img [src]="skill.logo" height="100" width="200" alt="" />
+        </div>
+    </div>
+</div>

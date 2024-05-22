@@ -11,6 +11,7 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectCardsComponent } from './project-cards/project-cards.component';
+import { SkillsSliderComponent } from './skills-slider/skills-slider.component';
 
 
 
@@ -26,7 +27,8 @@ import { ProjectCardsComponent } from './project-cards/project-cards.component';
     IntroductionComponent,
     ProjectsComponent,
     SkillsComponent,
-    ProjectCardsComponent
+    ProjectCardsComponent,
+    SkillsSliderComponent
   ],
   imports: [
     CommonModule
