@@ -28,20 +28,20 @@ export class PortfolioService {
       },
       {
         id: 3,
+        title: 'Bus Ticket Booking Application',
+        description: 'A multi-page web application for Swift, hassle-free reservations. Developed with Angular for a dynamic user experience.',
+        img: 'assets/images/bus-booking-app-cover.jpg',
+        demoUrl: 'https://anilkumar0331.github.io/bus-booking-app/',
+        codeUrl: 'https://github.com/anilkumar0331/bus-booking-app'
+      },
+      {
+        id: 4,
         title: 'Online Shopping Application',
         description: 'A single-page web application for easy browsing and purchasing. Developed with HTML and CSS.',
         img: 'assets/images/online-shopping-app-cover.webp',
         demoUrl: 'https://anilkumar0331.github.io/estore-online-shopping/',
         codeUrl: 'https://github.com/anilkumar0331/estore-online-shopping'
       },
-      {
-        id: 4,
-        title: 'Bus Ticket Booking Application',
-        description: 'A responsive web application for Swift, hassle-free reservations. Developed with Express.js, Angular, and MongoDB.',
-        img: 'assets/images/bus-booking-app-cover.png',
-        demoUrl: 'https://anilkumar0331.github.io/Bus-Booking-App/',
-        codeUrl: 'https://github.com/anilkumar0331/Bus-Booking-App'
-      }
     ],
     mlProjects: [
       {
