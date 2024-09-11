@@ -92,21 +92,11 @@ export class PortfolioService {
     },
     {
       id: 2,
-      role: 'Full Stack Web Developer',
+      role: 'Full Stack Java Developer',
       designation: 'Programmer Analyst',
       sDate: 'Feb 2021',
       eDate: 'July 2022',
       empType: 'Full-Time',
-      company: 'Cognizant',
-      address: 'Hyderabad, Telangana, India'
-    },
-    {
-      id: 3,
-      role: 'Full Stack Web Developer',
-      designation: 'Programmer Analyst Trainee',
-      sDate: 'Aug 2020',
-      eDate: 'Jan 2021',
-      empType: 'Internship',
       company: 'Cognizant',
       address: 'Hyderabad, Telangana, India'
     },
