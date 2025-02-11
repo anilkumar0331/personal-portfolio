@@ -82,19 +82,19 @@ export class PortfolioService {
   experienceDetails: any = [
     {
       id: 1,
-      role: 'Data Analyst',
-      designation: 'Scrum Master & Developer',
-      sDate: 'Jan 2024',
-      eDate: 'May 2024',
-      empType: 'Apprenticeship',
-      company: 'HUMAN-CYBER PERFORMANCE TECH, LLC',
+      role: 'Full Stack Developer',
+      designation: 'Software Developer',
+      sDate: 'June 2023',
+      eDate: 'Present',
+      empType: '',
+      company: 'PNC Bank',
       address: 'Fairfax, Virginia, United States'
     },
     {
       id: 2,
-      role: 'Full Stack Java Developer',
+      role: 'Full Stack Developer',
       designation: 'Programmer Analyst',
-      sDate: 'Feb 2021',
+      sDate: 'Jan 2020',
       eDate: 'July 2022',
       empType: 'Full-Time',
       company: 'Cognizant',
@@ -137,16 +137,21 @@ export class PortfolioService {
       },
       {
         id: 3,
+        name: 'C#',
+        logo: 'https://cdn.worldvectorlogo.com/logos/c--4.svg'
+      },
+      {
+        id: 4,
         name: 'R',
         logo: 'https://www.r-project.org/logo/Rlogo.svg'
       },
       {
-        id: 4,
+        id: 5,
         name: 'JavaScript',
         logo: 'https://www.svgrepo.com/show/452045/js.svg'
       },
       {
-        id: 5,
+        id: 6,
         name: 'TypeScript',
         logo: 'https://www.svgrepo.com/show/374146/typescript-official.svg'
       }
@@ -196,6 +201,11 @@ export class PortfolioService {
         id: 9,
         name: 'Spring Boot',
         logo: 'https://www.svgrepo.com/show/354379/spring.svg'
+      },
+      {
+        id: 10,
+        name: 'ASP.NET CORE',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg'
       }
     ],
     databases: [
